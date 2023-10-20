@@ -139,6 +139,8 @@ const Counter: React.FC<Props> = ({ smartAccount, provider }) => {
 
   return (
     <>
+      {isLoading && "Loading..."}
+      Contract Address: {counterContract}
       <TotalCountDisplay count={count} />
       <ToastContainer
         position="top-right"
